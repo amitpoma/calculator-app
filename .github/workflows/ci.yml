@@ -1,0 +1,8 @@
+      - name: Install dependencies
+        run: |
+          pip install flake8
+          pip install -r requirements.txt
+
+      - name: Linting (flake8)
+        run: flake8 app/
+
